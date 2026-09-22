@@ -4,6 +4,10 @@ A Homebrew terminal–inspired theme for ChatGPT's website & a Comet browser lau
 
 Use your regular ChatGPT account, conversations, and subscription. No API key or separate chat service.
 
+## Live preview
+
+![Chatbrew running on ChatGPT](screenshot.png)
+
 ## What’s included
 
 - **Theme:** a CSS-only browser extension. Keeps ChatGPT’s standard navigation and controls.
