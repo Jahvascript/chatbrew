@@ -1,15 +1,13 @@
 # Terminal Green
 
-A black-and-neon-green terminal skin for the real ChatGPT website. Inspired by a late-night coding setup: Menlo monospace, phosphor-green prompts, soft green responses, cyan links, and a subtle composer glow.
+A Homebrew terminal–inspired theme for ChatGPT's website & a Comet browser launcher for a minimal, ChatGPT window without tabs, an address bar, or bookmarks where supported.
 
 Use your regular ChatGPT account, conversations, and subscription. No API key or separate chat service.
 
 ## What’s included
 
-- **Original green theme:** a CSS-only browser extension. Keeps ChatGPT’s standard navigation and controls.
-- **Optional macOS launcher:** asks Comet to open ChatGPT in a resizable app-style window, without tabs or an address bar when supported.
-
-The experimental minimal theme is not included in this repository.
+- **Theme:** a CSS-only browser extension. Keeps ChatGPT’s standard navigation and controls.
+- **Optional macOS launcher:** asks Comet to open ChatGPT in a minimalistic, terminal-inspired window, without tabs, bookmarks, or the address address bar.
 
 ## Install the theme
 
@@ -19,8 +17,6 @@ The experimental minimal theme is not included in this repository.
 4. Turn on **Developer mode**.
 5. Select **Load unpacked**, then choose the **extension** folder inside this repository.
 6. Open [ChatGPT](https://chatgpt.com), sign in normally, and refresh any existing ChatGPT tabs.
-
-If you installed an earlier copy of Terminal Green, disable or remove that copy first so two versions do not compete.
 
 The original theme has been confirmed working in live Comet by its creator. Chrome and Edge use the same extension format but have not been separately tested for this project.
 
@@ -33,8 +29,6 @@ On macOS with Comet installed in `/Applications`:
 3. The launcher requests a separate app-style window for ChatGPT. Resize it beside your editor.
 
 Despite its name, the launcher does not switch to a different theme. It requests `--app=https://chatgpt.com` from the installed Comet browser and does not create a separate browser profile, quit existing windows, or change settings. Your browser determines which profile handles the launch; if your extension or login is in another profile, use that profile instead.
-
-**Comet’s app-window behavior has not been verified for this project.** If it opens a regular tab, your version did not honor the request. A title bar or site icon may remain. This is not a custom native app or a guaranteed frameless window.
 
 If double-clicking reports a file-permission problem, open Terminal, type `bash ` (including the space), drag **Open Minimal.command** into the Terminal window, and press Return.
 
