@@ -6,7 +6,7 @@ Use your regular ChatGPT account, conversations, and subscription. No API key or
 
 ## Live preview
 
-![Chatbrew running on ChatGPT](Screenshot 2026-09-22 at 7.21.52 PM.png)
+![Chatbrew running on ChatGPT](ChatbrewPreview.png)
 
 ## What’s included
 
