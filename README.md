@@ -1,4 +1,4 @@
-# Terminal Green
+# Chatbrew
 
 A Homebrew terminal–inspired theme for ChatGPT's website & a Comet browser launcher for a minimal, ChatGPT window without tabs, an address bar, or bookmarks where supported.
 
