@@ -1,0 +1,118 @@
+/* Terminal Green. CSS only. No external fonts, assets, scripts, or requests.
+   Keep layout and interaction owned by ChatGPT. No overlays or hidden controls. */
+:root, html.light, html.dark {
+  color-scheme: dark !important;
+  --tg-black: #030603;
+  --tg-panel: #091109;
+  --tg-green: #51ff16;
+  --tg-text: #b6f5a5;
+  --tg-muted: #87b77b;
+  --tg-line: #284729;
+  --tg-cyan: #35d9e3;
+  --bg-primary: var(--tg-black) !important;
+  --bg-secondary: var(--tg-panel) !important;
+  --bg-tertiary: #102010 !important;
+  --bg-elevated-primary: #0b150b !important;
+  --bg-elevated-secondary: #142414 !important;
+  --bg-scrim: #000000b3 !important;
+  --text-primary: var(--tg-text) !important;
+  --text-secondary: var(--tg-muted) !important;
+  --text-tertiary: #82a57a !important;
+  --text-quaternary: #72936b !important;
+  --text-inverted: #031000 !important;
+  --text-accent: var(--tg-green) !important;
+  --border-light: #213a22 !important;
+  --border-medium: var(--tg-line) !important;
+  --border-heavy: #42723d !important;
+  --border-xheavy: #70a960 !important;
+  --main-surface-primary: var(--tg-black) !important;
+  --main-surface-secondary: var(--tg-panel) !important;
+  --main-surface-tertiary: #102010 !important;
+  --sidebar-surface-primary: #050b05 !important;
+  --sidebar-surface-secondary: #101e10 !important;
+  --sidebar-surface-tertiary: #172917 !important;
+  --message-surface: #102010 !important;
+  --composer-surface: #091109 !important;
+  --link: var(--tg-cyan) !important;
+  --link-hover: #8df5fa !important;
+  --selection: #284c21 !important;
+  --interactive-bg-primary-default: var(--tg-green) !important;
+  --interactive-bg-primary-hover: #8aff5e !important;
+  --interactive-bg-primary-press: #41d514 !important;
+  --interactive-label-primary-default: #031000 !important;
+  --interactive-bg-secondary-default: #142414 !important;
+  --interactive-bg-secondary-hover: #203820 !important;
+  --interactive-label-secondary-default: var(--tg-text) !important;
+}
+html, body {
+  background-color: var(--tg-black) !important;
+  color: var(--tg-text) !important;
+  font-family: Menlo, Monaco, "Cascadia Mono", "Courier New", monospace !important;
+}
+button, input, textarea, select, [contenteditable="true"] {
+  font-family: inherit !important;
+}
+main, #thread { background-color: var(--tg-black) !important; }
+nav, #stage-slideover-sidebar, [data-testid="sidebar"] {
+  background-color: #050b05 !important;
+  border-color: var(--tg-line) !important;
+}
+[data-message-author-role="assistant"] {
+  color: var(--tg-text) !important;
+}
+[data-message-author-role="user"] {
+  color: var(--tg-green) !important;
+}
+.markdown, .prose {
+  --tw-prose-body: var(--tg-text) !important;
+  --tw-prose-headings: var(--tg-green) !important;
+  --tw-prose-bold: #d1ffc2 !important;
+  --tw-prose-links: var(--tg-cyan) !important;
+  --tw-prose-code: var(--tg-green) !important;
+  --tw-prose-pre-code: var(--tg-text) !important;
+  --tw-prose-pre-bg: #060c06 !important;
+  --tw-prose-quotes: var(--tg-muted) !important;
+  --tw-prose-quote-borders: var(--tg-line) !important;
+  color: var(--tg-text) !important;
+}
+.markdown :is(h1,h2,h3,h4), main h1 {
+  color: var(--tg-green) !important;
+  font-family: inherit !important;
+}
+.markdown a { color: var(--tg-cyan) !important; }
+.markdown :is(strong, b) { color: #d1ffc2 !important; }
+.markdown pre {
+  background-color: #060c06 !important;
+  border: 1px solid var(--tg-line) !important;
+  border-radius: 8px !important;
+}
+.markdown code {
+  font-family: Menlo, Monaco, "Cascadia Mono", "Courier New", monospace !important;
+}
+.markdown :not(pre) > code { color: var(--tg-green) !important; }
+/* Preserve syntax colors, image/video colors, and semantic warning colors. */
+#prompt-textarea, textarea {
+  color: #c5ffb4 !important;
+  caret-color: var(--tg-green) !important;
+}
+form:has(#prompt-textarea) {
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #34572d, 0 0 22px #51ff160a !important;
+}
+form:has(#prompt-textarea):focus-within {
+  box-shadow: 0 0 0 1px #51ff16, 0 0 24px #51ff1614 !important;
+}
+[role="dialog"], [role="menu"], [role="listbox"] {
+  background-color: #0b150b !important;
+  color: var(--tg-text) !important;
+  border-color: var(--tg-line) !important;
+}
+:is(button, a, input, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--tg-cyan) !important;
+  outline-offset: 3px !important;
+}
+::selection { background: #315e25 !important; color: #e1ffd7 !important; }
+* { scrollbar-color: #345d2c #050905; }
+@media print {
+  :root { --tg-black: white; --tg-text: black; --tg-green: #185b10; --tg-cyan: #075963; }
+}

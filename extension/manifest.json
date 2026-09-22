@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Terminal Green \u2014 ChatGPT Skin",
+  "version": "1.0.0",
+  "description": "A black and phosphor-green terminal theme for the real ChatGPT website. Styling only; no scripts or data collection.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "css": [
+        "theme.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
