@@ -1,4 +1,4 @@
-/* Terminal Green. CSS only. No external fonts, assets, scripts, or requests.
+/* Chatbrew by Jahvascript. CSS only. No external fonts, assets, scripts, or requests.
    Keep layout and interaction owned by ChatGPT. No overlays or hidden controls. */
 :root, html.light, html.dark {
   color-scheme: dark !important;
@@ -44,6 +44,18 @@
   --interactive-bg-secondary-hover: #203820 !important;
   --interactive-label-secondary-default: var(--tg-text) !important;
 }
+/* Account accent themes use a separate set of tokens for sent messages
+   and composer actions. Keep these overrides outside the layout rules. */
+:root, html.light, html.dark, body, [data-chat-theme] {
+  --theme-user-msg-bg: #102010 !important;
+  --theme-user-msg-text: var(--tg-green) !important;
+  --theme-submit-btn-bg: var(--tg-green) !important;
+  --theme-submit-btn-text: #031000 !important;
+  --blue-theme-user-msg-bg: #102010 !important;
+  --blue-theme-user-msg-text: var(--tg-green) !important;
+  --blue-theme-submit-btn-bg: var(--tg-green) !important;
+  --blue-theme-submit-btn-text: #031000 !important;
+}
 html, body {
   background-color: var(--tg-black) !important;
   color: var(--tg-text) !important;
@@ -61,7 +73,36 @@ nav, #stage-slideover-sidebar, [data-testid="sidebar"] {
   color: var(--tg-text) !important;
 }
 [data-message-author-role="user"] {
+  --message-surface: #102010 !important;
+  --bg-user-message: #102010 !important;
+  --text-user-message: var(--tg-green) !important;
   color: var(--tg-green) !important;
+}
+/* Override the sent-message bubble itself, where the account accent can
+   otherwise take precedence over the inherited terminal palette. */
+[data-message-author-role="user"].user-message-bubble,
+[data-message-author-role="user"] .user-message-bubble,
+[data-message-author-role="user"] .bg-token-message-surface {
+  background-color: #102010 !important;
+  color: var(--tg-green) !important;
+}
+[data-message-author-role="user"] .whitespace-pre-wrap {
+  color: var(--tg-green) !important;
+}
+/* Some versions put the themed background outside the author container. */
+[class*="theme-user-msg-bg"] {
+  background-color: #102010 !important;
+  color: var(--tg-green) !important;
+}
+#composer-submit-button,
+button[data-testid="send-button"],
+form:has(#prompt-textarea) button:is(
+  [data-testid="composer-speech-button"],
+  [aria-label*="voice" i],
+  [class*="theme-submit-btn-bg"]
+) {
+  background-color: var(--tg-green) !important;
+  color: #031000 !important;
 }
 .markdown, .prose {
   --tw-prose-body: var(--tg-text) !important;
