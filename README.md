@@ -2,6 +2,10 @@
 
 A Homebrew terminal–inspired theme for ChatGPT's website & a Comet browser launcher for a minimal, ChatGPT window without tabs, an address bar, or bookmarks where supported.
 
+**By [Jahvascript](https://github.com/Jahvascript).**
+
+A Homebrew terminal–inspired, black-and-neon-green skin for the real ChatGPT website. Inspired by a late-night coding setup: Menlo monospace, phosphor-green prompts, soft green responses, cyan links, and a subtle composer glow.
+
 Use your regular ChatGPT account, conversations, and subscription. No API key or separate chat service.
 
 ## Live preview
@@ -22,7 +26,13 @@ Use your regular ChatGPT account, conversations, and subscription. No API key or
 5. Select **Load unpacked**, then choose the **extension** folder inside this repository.
 6. Open [ChatGPT](https://chatgpt.com), sign in normally, and refresh any existing ChatGPT tabs.
 
-The original theme has been confirmed working in live Comet by its creator. Chrome and Edge use the same extension format but have not been separately tested for this project.
+If you installed an earlier copy of Chatbrew (previously Terminal Green), disable or remove that copy first so two versions do not compete.
+
+Version 1.0.2 has been confirmed working in live Comet by its creator, including green sent-message bubbles and send/voice buttons. Chrome and Edge use the same extension format but have not been separately tested for this project.
+
+## Update an existing installation
+
+Replace the files in your installed extension folder with the latest files from `extension`, reload the extension on your browser’s Extensions page, and refresh ChatGPT.
 
 ## Optional: open a standalone Comet window
 
@@ -51,7 +61,7 @@ Edit the color variables at the top of `extension/theme.css`. Then reload the ex
 
 ## Disable or uninstall
 
-Open your browser’s Extensions page, switch Terminal Green off or select **Remove**, and refresh ChatGPT. Closing the optional app-style window does not uninstall the skin.
+Open your browser’s Extensions page, switch Chatbrew off or select **Remove**, and refresh ChatGPT. Closing the optional app-style window does not uninstall the skin.
 
 ## Privacy and limitations
 

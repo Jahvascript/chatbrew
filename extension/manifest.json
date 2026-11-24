@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Terminal Green \u2014 ChatGPT Skin",
-  "version": "1.0.0",
-  "description": "A black and phosphor-green terminal theme for the real ChatGPT website. Styling only; no scripts or data collection.",
+  "name": "Chatbrew \u2014 ChatGPT Terminal Theme",
+  "version": "1.0.2",
+  "description": "A Homebrew terminal\u2013inspired green theme for ChatGPT by Jahvascript. CSS only; no scripts or data collection.",
   "content_scripts": [
     {
       "matches": [
