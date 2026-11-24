@@ -74,3 +74,22 @@ This is an unofficial community theme, not affiliated with or endorsed by OpenAI
 ## License
 
 [MIT](LICENSE).
+
+---
+
+## Everyone Is Welcome at JahvaScript
+
+**Different backgrounds. Different experiences. One community.**
+
+We welcome contributors of every background and experience
+level. We value peace, respect, creativity, accessibility,
+learning, and constructive collaboration.
+
+- [Code of Conduct](https://github.com/Jahvascript/.github/blob/main/CODE_OF_CONDUCT.md)
+- [Contributing](https://github.com/Jahvascript/.github/blob/main/CONTRIBUTING.md)
+- [Accessibility](https://github.com/Jahvascript/.github/blob/main/ACCESSIBILITY.md)
+- [Support](https://github.com/Jahvascript/.github/blob/main/SUPPORT.md)
+
+Community contact: jahvascripts@gmail.com
+
+*JahvaScript — Code with purpose. Build with unity.*
